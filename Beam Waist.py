@@ -13,7 +13,7 @@ def gauss(x, a, b, c): #normal distribution function
     return y
 
 def RealBeam(z, w0, z0, M):
-    top = (z - z0) * 0.00028 * M #0.0028 mm -> 280 nm wavelength of light
+    top = (z - z0) * 0.00028 * M #0.00028 mm -> 280 nm wavelength of light
     bottom = np.pi * w0 ** 2
     frac = (top / bottom) ** 2
     wr = w0 * np.sqrt((1 + frac))
@@ -101,7 +101,7 @@ wzr = RealBeam(wzr_z, *wzr_fit[0])
 
 plt.close(3)
 plt.figure(3)
-plt.plot(mm[2:6], zdat, 'k.', label = 'Experimental Data')
+plt.plot(mm, zdat, 'k.', label = 'Experimental Data')
 plt.plot(wzr_z, wzr, 'b', label = 'Analytical Solution')
 plt.xlabel('Z Position (mm)')
 plt.ylabel('Beam Waist Radius (mm)')
