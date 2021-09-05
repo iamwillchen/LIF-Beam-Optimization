@@ -1,8 +1,8 @@
 # LIF-Beam-Optimization
 This was used to optimize a laser beam and measure the beam waist and convert it into a beam radius as a function of length.
 
-Note_1: Energies from a laser beam being cut by a razor blade over different increments in the z-direction (Up and downwards of the laser). 
-Note_2: .xlsx file is required for this code to run. Furthermore columns should be in the order of z-position, beam energy in microwatts, and standard deviation.
+Note: Energies from a laser beam being cut by a razor blade over different increments in the z-direction (Up and downwards of the laser). 
+.xlsx file is required for this code to run. Furthermore columns should be in the order of z-position, beam energy in microwatts, and standard deviation.
 
 Version Used: Python 3.7.6
 
